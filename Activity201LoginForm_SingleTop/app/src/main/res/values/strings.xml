@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Activity2.01-LoginForm_SingleTop</string>
+    <string name="welcome_text">Hello \'%s\' you are now logged in, we hope you enjoy using the app!</string>
+</resources>
