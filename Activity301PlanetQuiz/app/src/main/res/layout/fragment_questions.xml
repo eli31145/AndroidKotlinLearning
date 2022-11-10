@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsFragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_planet_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Planet Quiz"
+        android:gravity="center"
+        style="@style/HeaderText"/>
+
+    <Button
+        android:id="@+id/tv_largest_planet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/largest_planet"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/tv_most_moons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/most_moons"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/tv_spins_side"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/side_spinning"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        />
+
+</LinearLayout>
