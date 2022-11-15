@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!--creates all destinations in app, but doesn't specify
+    if these are primary/secondary destinations-->
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.exercise401_navigationdrawer.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/nav_to_home_content"
+            app:destination="@id/nav_content"
+            app:popUpTo="@id/nav_home" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_content"
+        android:name="com.example.exercise401_navigationdrawer.ContentFragment"
+        android:label="@string/content"
+        tools:layout="@layout/fragment_content" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_recent"
+        android:name="com.example.exercise401_navigationdrawer.RecentFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_recent" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.exercise401_navigationdrawer.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_archive"
+        android:name="com.example.exercise401_navigationdrawer.ArchiveFragment"
+        android:label="@string/archive"
+        tools:layout="@layout/fragment_archive" />
+
+    <fragment
+        android:id="@+id/nav_bin"
+        android:name="com.example.exercise401_navigationdrawer.BinFragment"
+        android:label="@string/bin"
+        tools:layout="@layout/fragment_archive" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.exercise401_navigationdrawer.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+</navigation>
