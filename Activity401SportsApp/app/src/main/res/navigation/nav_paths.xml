@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_paths"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:label="Home Fragment"
+        android:name="com.example.activity401_sportsapp.HomeFragment"
+        tools:layout="Home Fragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:label="Account Fragment"
+        android:name="com.example.activity401_sportsapp.AccountFragment"
+        tools:layout="Account Fragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:label="Profile Fragment"
+        android:name="com.example.activity401_sportsapp.ProfileFragment"
+        tools:layout="Profile Fragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_my_sports"
+        android:label="My Sports Fragment"
+        android:name="com.example.activity401_sportsapp.MySportsFragment"
+        tools:layout="My Sports Fragment">
+
+        <action
+            android:id="@+id/action_to_sports"
+            app:destination="@id/nav_sports"
+            app:popUpTo="@id/nav_my_sports" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_sports"
+        android:label="Sports Fragment"
+        android:name="com.example.activity401_sportsapp.SportsFragment"
+        tools:layout="Sports Fragment"
+        />
+
+</navigation>
